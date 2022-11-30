@@ -33,10 +33,9 @@ if (isset($_GET['length'])) {
                 <input type="number" name="length" id="length" class="form-control">
             </div>
             <div class="mb-3 ">
-                <button class="btn btn-primary d-block w-100 " type="button" style="background: var(--bs-indigo); " onclick="generatePassword()">Crea Password</button>
+                <button class="btn btn-primary d-block w-100 " type="button" style="background: var(--bs-indigo); ">Crea Password</button>
             </div>
-        </form>
-        <?php if (isset($response)) { ?>
+            <?php if (isset($response)) { ?>
             <div class="col-7">
                 <div class="alert alert-info" role="alert">
                     <?php echo $response; ?>
@@ -44,6 +43,8 @@ if (isset($_GET['length'])) {
             </div>
 
         <?php } ?>
+        </form>
+        
     </div>
 </body>
 </html>

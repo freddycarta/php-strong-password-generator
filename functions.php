@@ -1,4 +1,5 @@
 <?php
+use LDAP\Result;
 
 function generatePassword ($passwordLength) 
 {
@@ -21,10 +22,11 @@ function generatePassword ($passwordLength)
 
             $password .= $char;
             
+            
         }
-        session_start();
-        $_SESSION['password'] = $password;
-        header('Location: ./success.php');
+        // session_start();
+        // $_SESSION['password'] = $password;
+        // header('Location: ./success.php');
     }
     return $result;
 }
